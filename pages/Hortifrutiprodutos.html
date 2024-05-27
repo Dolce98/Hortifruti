@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title>Produtos - Hortifruti Online</title>
     <link rel="stylesheet" href="../styles/Hortifrutiprodutos.css">
+    <script src="../js/produtos.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Hortifruti Online</h1>
@@ -16,66 +19,143 @@
             </ul>
         </nav>
     </header>
-
-    <section id="fruta">
-        <h1 class="Fruta"> Frutas</h1>
-        <div class="produto">
-            <img src="https://static.tuasaude.com/media/article/hz/uq/beneficios-do-morango_39336_l.jpg" alt="Morango">
-            <h4>Morango</h4>
+    <h2 class="Fruta">Frutas</h2>
+    <section id="fruta" class="item-container">
+        <div class="item-component" id="morango">
+            <img src="https://static.tuasaude.com/media/article/hz/uq/beneficios-do-morango_39336_l.jpg"
+                class="item-image">
+            <h2 class="item-title">Morango</h2>
+            <p class="item-price">R$10,00</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('morango')">-</button>
+                <span class="quantity" id="quantity-morango">0</span>
+                <button class="button" onclick="increaseQuantity('morango')">+</button>
+            </div>
         </div>
-        <div class="produto">
-            <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:7.4556103:1631388125/Manga-3.jpg?f=default&$p$f=8a3b297" alt="Manga">
-            <h3>Manga</h3>
+        <div class="item-component" id="manga">
+            <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:7.4556103:1631388125/Manga-3.jpg?f=default&R$pR$f=8a3b297"
+                class="item-image">
+            <h2 class="item-title">Manga</h2>
+            <p class="item-price">R$7,59</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('manga')">-</button>
+                <span class="quantity" id="quantity-manga">0</span>
+                <button class="button" onclick="increaseQuantity('manga')">+</button>
+            </div>
         </div>
-        <div class="produto">
-            <img src="https://static.tuasaude.com/media/article/la/fp/jaca_32147_l.jpg" alt="Jaca">
-            <h3>Jaca</h3>
+        <div class="item-component" id="jaca">
+            <img src="https://static.tuasaude.com/media/article/la/fp/jaca_32147_l.jpg" class="item-image">
+            <h2 class="item-title">Jaca</h2>
+            <p class="item-price">R$12,99</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('jaca')">-</button>
+                <span class="quantity" id="quantity-jaca">0</span>
+                <button class="button" onclick="increaseQuantity('jaca')">+</button>
+            </div>
         </div>
-        <div class="produto">
-            <img src="https://static.tuasaude.com/media/article/1b/bc/beneficios-da-goiaba_13191_l.jpg" alt="Goiaba">
-            <h3>Goiaba</h3>
+        <div class="item-component" id="goiaba">
+            <img src="https://static.tuasaude.com/media/article/1b/bc/beneficios-da-goiaba_13191_l.jpg"
+                class="item-image">
+            <h2 class="item-title">Goiaba</h2>
+            <p class="item-price">R$4,49</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('goiaba')">-</button>
+                <span class="quantity" id="quantity-goiaba">0</span>
+                <button class="button" onclick="increaseQuantity('goiaba')">+</button>
+            </div>
         </div>
-        <div class="produto">
-            <img src="https://s1.static.brasilescola.uol.com.br/be/2023/08/fatias-de-melancia-proximas-a-uma-melancia-inteira.jpg" alt="Melancia">
-            <h3>Melancia</h3>
+        <div class="item-component" id="melancia">
+            <img src="https://s1.static.brasilescola.uol.com.br/be/2023/08/fatias-de-melancia-proximas-a-uma-melancia-inteira.jpg"
+                class="item-image">
+            <h2 class="item-title">Melancia</h2>
+            <p class="item-price">R$14,99</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('melancia')">-</button>
+                <span class="quantity" id="quantity-melancia">0</span>
+                <button class="button" onclick="increaseQuantity('melancia')">+</button>
+            </div>
         </div>
-        <div class="produto">
-            <img src="https://boali.com.br/wp-content/uploads/2021/01/Pitaya.jpg" alt="Pitaya">
-            <h3>Pitaya</h3>
-        </div>
-        </section>
-
-
-        <section id="verdura">
-        <h2 class="Verduras"> Verduras </h2>
-        <div class="produto">
-            <img src="https://www.infoescola.com/wp-content/uploads/2010/08/couve-flor_227987356.jpg" alt="Couve-flor">
-            <h3>Couve-flor</h3>
-        </div>
-        <div class="produto">
-            <img src="https://s3.sa-east-1.amazonaws.com/static.activodeporte.com/brasil/uploads/2022/11/16162704/ativo_brocolis-690x515.jpg" alt="Brócolis">
-            <h3>Brócolis</h3>
-        </div>
-        <div class="produto">
-            <img src="https://www.dicasdemulher.com.br/wp-content/uploads/2018/05/alho-poro-3-1.jpg" alt="Alho-poró">
-            <h3>Alho-Poró</h3>
-        </div>
-        <div class="produto">
-            <img src="https://doutorjairo.com.br/media/_versions/istock-1_dentes_de_alho_widelg.jpg" alt="Alho">
-            <h3>Alho</h3>
-        </div>
-        <div class="produto">
-            <img src="https://conteudo.imguol.com.br/c/entretenimento/61/2017/10/25/cebola-1508951722238_v2_1920x1275.jpg" alt="Cebola">
-            <h3>Cebola</h3>
-        </div>
-        <div class="produto">
-            <img src="https://tribunadejundiai.com.br/wp-content/uploads/2022/07/cheiro-verde-salsinha-cebolinha-compressed-1200x900.jpg" alt="Cheiro Verde">
-            <h3>Cheiro Verde</h3>
+        <div class="item-component" id="pitaya">
+            <img src="https://boali.com.br/wp-content/uploads/2021/01/Pitaya.jpg" class="item-image">
+            <h2 class="item-title">Pitaya</h2>
+            <p class="item-price">R$24,70</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('pitaya')">-</button>
+                <span class="quantity" id="quantity-pitaya">0</span>
+                <button class="button" onclick="increaseQuantity('pitaya')">+</button>
+            </div>
         </div>
     </section>
-
+    <h2 class="Verduras">Verduras</h2>
+    <section id="verdura" class="item-container">
+        <div class="item-component" id="couve-flor">
+            <img src="https://www.infoescola.com/wp-content/uploads/2010/08/couve-flor_227987356.jpg"
+                class="item-image">
+            <h2 class="item-title">Couve-flor</h2>
+            <p class="item-price">R$10,00</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('couve-flor')">-</button>
+                <span class="quantity" id="quantity-couve-flor">0</span>
+                <button class="button" onclick="increaseQuantity('couve-flor')">+</button>
+            </div>
+        </div>
+        <div class="item-component" id="brocolis">
+            <img src="https://s3.sa-east-1.amazonaws.com/static.activodeporte.com/brasil/uploads/2022/11/16162704/ativo_brocolis-690x515.jpg"
+                class="item-image">
+            <h2 class="item-title">Brócolis</h2>
+            <p class="item-price">R$6,39</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('brocolis')">-</button>
+                <span class="quantity" id="quantity-brocolis">0</span>
+                <button class="button" onclick="increaseQuantity('brocolis')">+</button>
+            </div>
+        </div>
+        <div class="item-component" id="alho-poro">
+            <img src="https://www.dicasdemulher.com.br/wp-content/uploads/2018/05/alho-poro-3-1.jpg" class="item-image">
+            <h2 class="item-title">Alho-Poró</h2>
+            <p class="item-price">R$16,99</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('alho-poro')">-</button>
+                <span class="quantity" id="quantity-alho-poro">0</span>
+                <button class="button" onclick="increaseQuantity('alho-poro')">+</button>
+            </div>
+        </div>
+        <div class="item-component" id="alho">
+            <img src="https://doutorjairo.com.br/media/_versions/istock-1_dentes_de_alho_widelg.jpg" class="item-image">
+            <h2 class="item-title">Alho</h2>
+            <p class="item-price">R$3,99</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('alho')">-</button>
+                <span class="quantity" id="quantity-alho">0</span>
+                <button class="button" onclick="increaseQuantity('alho')">+</button>
+            </div>
+        </div>
+        <div class="item-component" id="cebola">
+            <img src="https://conteudo.imguol.com.br/c/entretenimento/61/2017/10/25/cebola-1508951722238_v2_1920x1275.jpg"
+                class="item-image">
+            <h2 class="item-title">Cebola</h2>
+            <p class="item-price">R$5,45</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('cebola')">-</button>
+                <span class="quantity" id="quantity-cebola">0</span>
+                <button class="button" onclick="increaseQuantity('cebola')">+</button>
+            </div>
+        </div>
+        <div class="item-component" id="cheiroverde">
+            <img src="https://tribunadejundiai.com.br/wp-content/uploads/2022/07/cheiro-verde-salsinha-cebolinha-compressed-1200x900.jpg"
+                class="item-image">
+            <h2 class="item-title">Cheiro Verde</h2>
+            <p class="item-price">R$2,50</p>
+            <div class="button-container">
+                <button class="button" onclick="decreaseQuantity('cheiroverde')">-</button>
+                <span class="quantity" id="quantity-cheiroverde">0</span>
+                <button class="button" onclick="increaseQuantity('cheiroverde')">+</button>
+            </div>
+        </div>
+    </section>
     <footer>
         <p> 2024 Hortifruti Online. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>
