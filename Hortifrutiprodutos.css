@@ -42,15 +42,6 @@ section {
     height: 200px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: bottom;
-    bottom: 0;
-    width: 100%;
-}
 .Fruta{
   color: #4CAF50;  
 }
@@ -59,4 +50,14 @@ footer {
   }
 .verdura{
     margin-top: 500px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
 }

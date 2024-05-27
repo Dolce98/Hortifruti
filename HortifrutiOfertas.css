@@ -34,8 +34,8 @@ section {
 margin-top: 20px;
 
 }
-#carousel1 {
-    width: 100;
+.carousel img{
+    width: 350px;
     height: auto;
 }
 
