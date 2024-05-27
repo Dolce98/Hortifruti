@@ -31,17 +31,6 @@ section {
     text-align: center;
 }
 
-.produto {
-    display: inline-block;
-    margin: 20px;
-    width: 300px;
-}
-
-.produto img {
-    width: 300px;
-    height: 200px;
-}
-
 footer {
     background-color: #333;
     color: white;
@@ -50,13 +39,4 @@ footer {
     position: bottom;
     bottom: 0;
     width: 100%;
-}
-.Fruta{
-  color: #4CAF50;  
-}
-.Verduras{
-    color: #4CAF50;  
-  }
-.verdura{
-    margin-top: 500px;
 }
